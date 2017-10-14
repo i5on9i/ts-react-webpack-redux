@@ -8,7 +8,7 @@ import Header from './Header'
 const mapStateToProps = (state: any) => {
     // to do something with component
     return {
-        todos: state.todos,
+        headertexts: state.todos,
     }
 }
 
