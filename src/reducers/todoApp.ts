@@ -5,7 +5,7 @@ import { combineReducers } from 'redux'
 
 export const todos = (state: any[] = [], action:any) => {
     switch (action.type) {
-        case 'ADD_TODO':
+        case 'ADD_TO_HEADER':
             return [
                 ...state,
                 {

@@ -1,6 +1,5 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { HashRouter } from 'react-router-dom'
 
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
@@ -14,9 +13,7 @@ let store = createStore(todoApp)
 document.addEventListener("DOMContentLoaded", function() {
     ReactDOM.render(
         <Provider store={store}>
-            <HashRouter>
-                <SignUp />
-            </HashRouter>
+            <SignUp />
         </Provider>
         ,
         document.getElementById('example'));

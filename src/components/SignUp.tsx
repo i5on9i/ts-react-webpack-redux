@@ -1,8 +1,10 @@
 import * as React from "react";
 import {Link, Switch, Route} from 'react-router-dom'
 
-import {Hello} from './Hello'
 
+import {Hello2} from './Hello2'
+
+import HeaderWrapper from './HeaderWrapper'
 
 export interface SignUpProps { compiler: string; framework: string; }
 
@@ -12,13 +14,8 @@ export default class SignUp extends React.Component<undefined, undefined> {
     render() {
         return (
             <div>
-                
-                <Switch>
-                    <Route exact path='/' render={()=>(<h1>Test root </h1>)}/>
-                    <Route path='/hello/:helloId' component={Hello}/>
-                </Switch>
-                <Link to='/hello/test'>to Hello</Link>
-
+                <HeaderWrapper />
+                <Hello2 compiler='test' framework='test-f'/>
                
             </div>
         );
